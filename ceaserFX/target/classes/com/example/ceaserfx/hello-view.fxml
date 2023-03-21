@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ceaserfx.HelloController">
+  <tabs>
+    <Tab text="Зашифрувати">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="textField" layoutX="20.0" layoutY="29.0" prefHeight="26.0" prefWidth="562.0" promptText="Введіть текст..." />
+                  <TextArea fx:id="textArea" layoutX="20.0" layoutY="75.0" prefHeight="190.0" prefWidth="562.0" promptText="Закодований текст..." />
+                  <Button layoutX="255.0" layoutY="307.0" mnemonicParsing="false" onAction="#Button" text="Зашифрувати" />
+               </children>
+            </AnchorPane>
+         </content></Tab>
+    <Tab text="Розшифрувати">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="251.0" layoutY="303.0" mnemonicParsing="false" onAction="#Button1" text="Розшифрувати" />
+                  <TextArea fx:id="textArea1" layoutX="22.0" layoutY="70.0" prefHeight="200.0" prefWidth="550.0" promptText="Розшифрований текст..." />
+                  <Button layoutX="484.0" layoutY="10.0" mnemonicParsing="false" onAction="#Button2" text="Виберіть файл" />
+                  <Label fx:id="label" layoutX="24.0" layoutY="14.0" prefHeight="18.0" prefWidth="443.0" style="-fx-border-color: grey;" />
+               </children>
+            </AnchorPane>
+         </content></Tab>
+  </tabs>
+</TabPane>
